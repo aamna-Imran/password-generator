@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1>
+        RANDOM<br />
+        <span>Password Generator</span>
+      </h1>
+      <div class="container">
+        <div class="input-box">
+          <input type="text" id="input-pass" placeholder="password" disabled />
+          <span class="material-icons" id="copy_btn">content_copy </span>
+        </div>
+        <div class="row">
+          <p>Characters</p>
+          <input type="number" id="char-input" min="1" max="20" value="8" />
+        </div>
+        <div class="row">
+          <label for="upper-case"> Uppercase</label>
+          <input type="checkbox" id="upper-case" />
+        </div>
+        <div class="row">
+          <label for="lower-case"> Lowercase</label>
+          <input type="checkbox" id="lower-case" />
+        </div>
+        <div class="row">
+          <label for="number"> Numbers</label>
+          <input type="checkbox" id="number" />
+        </div>
+        <div class="row">
+          <label for="symbol">Symbols</label>
+          <input type="checkbox" id="symbol" />
+        </div>
+        <button id="btn">
+          Generate
+          <span class="material-icons">bolt</span>
+        </button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
